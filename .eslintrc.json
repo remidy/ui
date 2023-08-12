@@ -1,0 +1,65 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "array-bracket-newline": ["error", "consistent"],
+    "array-bracket-spacing": "error",
+    "array-element-newline": ["error", "consistent"],
+    "arrow-parens": "error",
+    "arrow-spacing": "error",
+    "brace-style": "error",
+    "comma-dangle": "error",
+    "comma-spacing": "error",
+    "comma-style": "error",
+    "computed-property-spacing": "error",
+    "dot-location": ["error", "property"],
+    "eol-last": "error",
+    "func-call-spacing": "error",
+    "function-call-argument-newline": ["error", "consistent"],
+    "function-paren-newline": ["error", "consistent"],
+    "implicit-arrow-linebreak": "error",
+    "indent": ["error", 2],
+    "jsx-quotes": "error",
+    "key-spacing": "error",
+    "keyword-spacing": "error",
+    "new-parens": "error",
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 0, "maxEOF": 0 }],
+    "no-trailing-spaces": "error",
+    "no-whitespace-before-property": "error",
+    "object-curly-newline": "error",
+    "object-curly-spacing": ["error", "always"],
+    "padded-blocks": ["error", "never"],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ],
+    "quotes": "error",
+    "rest-spread-spacing": "error",
+    "semi": "error",
+    "semi-spacing": "error",
+    "semi-style": "error",
+    "space-before-blocks": "error",
+    "space-before-function-paren": ["error", "never"],
+    "space-in-parens": "error",
+    "space-infix-ops": "error",
+    "space-unary-ops": "error",
+    "template-curly-spacing": "error"
+  }
+}

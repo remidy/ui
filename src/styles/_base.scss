@@ -1,0 +1,42 @@
+*, ::before, ::after {
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+button {
+  background-color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: left;
+}
+
+input {
+  appearance: none;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+svg {
+  display: block;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  resize: none;
+}
+
+ul {
+  list-style: none;
+}
