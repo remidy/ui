@@ -1,6 +1,6 @@
 # @remidy/ui
 
-Showcase of accessible, durable and simple React components.
+[Showcase](https://ui.remidy.dev) of accessible, durable and simple React components.
 
 ## Roadmap
 
