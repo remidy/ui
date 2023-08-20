@@ -11,19 +11,21 @@ body {
   line-height: 1.5;
 }
 
-button {
+button, input, textarea {
   background-color: inherit;
-  cursor: pointer;
+  color: inherit;
   font-family: inherit;
   font-size: inherit;
+  font-weight: inherit;
   line-height: inherit;
-  text-align: left;
+}
+
+button {
+  cursor: pointer;
 }
 
 input {
   appearance: none;
-  font-size: inherit;
-  line-height: inherit;
 }
 
 svg {
@@ -31,9 +33,6 @@ svg {
 }
 
 textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
   resize: none;
 }
 
