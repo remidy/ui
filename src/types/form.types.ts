@@ -12,7 +12,7 @@ interface FocusEvent {
   };
 }
 
-export interface SelectItemModel {
+export interface OptionModel {
   text: string;
   value: string;
 }

@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "noEmit": true,
+    "skipLibCheck": true,
     "strict": true
   }
 }

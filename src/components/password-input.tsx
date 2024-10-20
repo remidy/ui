@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { ChangeEventHandler, FocusEventHandler } from "../../types/form.types";
-import { Icon } from "../icon/icon";
-import { Input } from "../input/input";
+import { ChangeEventHandler, FocusEventHandler } from "../types/form.types";
+import { Icon } from "./icon";
+import { Input } from "./input";
 
-interface Props {
+export interface PasswordInputProps {
+  className?: string;
   id?: string;
   name: string;
   onBlur?: FocusEventHandler;
@@ -11,7 +12,7 @@ interface Props {
   value: string;
 }
 
-export function PasswordInput({ id, name, onBlur, onChange, value }: Props) {
+export function PasswordInput({ className, id, name, onBlur, onChange, value }: PasswordInputProps) {
   const [visible, setVisible] = useState(false);
 
   function handleClick() {
@@ -20,18 +21,19 @@ export function PasswordInput({ id, name, onBlur, onChange, value }: Props) {
 
   return (
     <Input
+      className={className}
       id={id}
       name={name}
       onBlur={onBlur}
       onChange={onChange}
       trailing={(
         <button
-          className="-m-px ml-0 p-12"
+          className="p-12"
           onClick={handleClick}
-          title={visible ? "Hide password" : "Show password"}
+          title={visible ? "Hide" : "Show"}
           type="button"
         >
-          <Icon name={visible ? "eye-slash" : "eye"} />
+          <Icon className="text-24" name={visible ? "eye-slash" : "eye"} />
         </button>
       )}
       type={visible ? "text" : "password"}
